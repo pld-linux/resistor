@@ -1,7 +1,6 @@
-#
-#
+# TODO: optflags
 Summary:	Resistor color bands/values converter
-Summary(pl):	Konwerter kolorowych pasków/varto¶ci oporników
+Summary(pl):	Konwerter kolorowych pasków/warto¶ci oporników
 Name:		resistor
 Version:	1.0
 Release:	0.1
@@ -27,15 +26,12 @@ u¿yciem QT.
 
 %prep
 %setup -q -n %{name}
-#%patch0 -p1
 
 %build
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -46,15 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-
-# if _sysconfdir != /etc:
-#%%dir %{_sysconfdir}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
-
 %attr(755,root,root) %{_bindir}/*
-
 %{_datadir}/%{name}
-
-# initscript and its config
 %attr(754,root,root) /etc/rc.d/init.d/%{name}
 %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/%{name}
