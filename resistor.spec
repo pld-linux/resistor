@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	Resistor color bands/values converter
-Summary(pl):	Konwerter kolorowych pasków/warto¶ci oporników
+Summary(pl.UTF-8):   Konwerter kolorowych paskÃ³w/wartoÅ›ci opornikÃ³w
 Name:		resistor
 Version:	1.0
 Release:	0.1
@@ -19,10 +19,10 @@ A simple GUI application that converts resistor color bands to
 resistor values and vice-versa. The code is C++ using the QT widget
 set.
 
-%description -l pl
-Prosta aplikacja z GUI pozwalaj±ca na konwersjê kolorów pasków na
-opornikach na warto¶ci (i odwrotnie). Zaimplementowana jest w C++, z
-u¿yciem QT.
+%description -l pl.UTF-8
+Prosta aplikacja z GUI pozwalajÄ…ca na konwersjÄ™ kolorÃ³w paskÃ³w na
+opornikach na wartoÅ›ci (i odwrotnie). Zaimplementowana jest w C++, z
+uÅ¼yciem QT.
 
 %prep
 %setup -q -n %{name}
