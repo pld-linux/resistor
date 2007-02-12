@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	Resistor color bands/values converter
-Summary(pl.UTF-8):   Konwerter kolorowych pasków/wartości oporników
+Summary(pl.UTF-8):	Konwerter kolorowych pasków/wartości oporników
 Name:		resistor
 Version:	1.0
 Release:	0.1
